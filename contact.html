@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — The Lampstand</title>
+<meta name="description" content="Get in touch with The Lampstand." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <svg class="lamp-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path class="flame-glow" d="M24 6C20 12 17 15 17 20a7 7 0 0 0 14 0c0-5-3-8-7-14Z" fill="url(#flameGrad4)"/>
+        <path d="M12 30h24l-3 6H15l-3-6Z" stroke="#7cc0ff" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M24 36v6M17 42h14" stroke="#6fe0a0" stroke-width="2" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="flameGrad4" x1="17" y1="6" x2="24" y2="27" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7cc0ff"/>
+            <stop offset="1" stop-color="#6fe0a0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>
+        <span class="brand-name">The Lampstand</span>
+        <span class="brand-tagline">Family sermons &amp; reflections</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">Toggle menu</span>
+      ☰ Menu
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="questions.html">Monthly Questions</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <div class="text-size-control" role="group" aria-label="Adjust text size">
+        <button type="button" data-font-dec aria-label="Decrease text size">A−</button>
+        <button type="button" data-font-reset aria-label="Reset text size">A</button>
+        <button type="button" data-font-inc aria-label="Increase text size">A+</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section style="padding-top:2.5rem;">
+      <p class="eyebrow">Reach out</p>
+      <h1 class="section-heading">Contact</h1>
+      <p class="section-sub">Have a thought on a sermon, a question to suggest for next month, or something else on your heart? Send it along.</p>
+
+      <div class="card contact-card">
+        <div class="contact-methods">
+          <div class="contact-method">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" stroke="#7cc0ff" stroke-width="2"/>
+              <path d="M3 6l9 7 9-7" stroke="#7cc0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <a href="mailto:family@example.com?subject=The%20Lampstand">family@example.com</a>
+              <p class="desc">Tap to open your email app with the address filled in.</p>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:1.75rem; color: var(--color-text-muted); font-size: 0.95rem;">
+          Replace <code>family@example.com</code> in <code>contact.html</code> with your real family
+          email address before publishing. Because this is a static site with no server, "Contact"
+          works by opening the visitor's own email app — there's no form to manage or spam to filter.
+        </p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>The Lampstand — kept for our family.</p>
+    <p><a href="contact.html">Get in touch</a></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
