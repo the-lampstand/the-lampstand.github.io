@@ -63,15 +63,25 @@ called `SERMONS`. Copy one whole entry (from `{` to the closing `},`) and paste 
 {
   id: "unique-short-id-2026-08",     // no spaces, must be unique
   title: "Your Sermon Title",
+  preacher: "Preacher's Name",       // shown on the card and the full sermon
   date: "2026-08-02",                // YYYY-MM-DD
   theme: "Faith",                    // any word you like — used for filtering
+  scriptures: ["John 3:16", "Romans 8:28"],  // shown in a box above the sermon
   excerpt: "One or two sentence teaser shown on the list page.",
   content: `
     <p>First paragraph of the sermon.</p>
-    <p>Second paragraph.</p>
+    <h4>An optional subheading</h4>
+    <ul>
+      <li>You can use bullet lists too</li>
+    </ul>
+    <p>Another paragraph.</p>
   `,
 },
 ```
+
+`preacher` and `scriptures` are both optional — leave either one out and it just won't
+show. Inside `content`, you can use `<p>` for paragraphs, `<h4>` for subheadings, and
+`<ul>`/`<ol>` with `<li>` for lists — the site will style all of these automatically.
 
 Save (commit) the file — the sermon appears on the site immediately, sorted by date,
 and shows up in the month and theme filters automatically.
@@ -97,6 +107,30 @@ on its own, so no one sees it by accident.
 
 If you ever want to reveal an answer early, change `revealed: false` to
 `revealed: true` and save.
+
+**Filtering:** the Questions page now has the same Month and Theme dropdown
+filters as the Sermons page. Give each question a `theme` (e.g. `"Faith"`,
+`"Grace"`, `"Hope"` — reuse your sermon themes, or make new ones) and it'll
+show up as a filter option automatically.
+
+## Part 3.5 — Verse of the day
+
+Near the bottom of `data.js` is a list called `VERSES`. Every page shows one
+verse in a banner just under the header. Because the site has no server, it
+can't truly pick a random verse — instead it rotates through your list by
+the calendar date, so **everyone sees the same verse on the same day**, and
+it automatically moves to the next one tomorrow. Once it reaches the end of
+the list it loops back to the start, forever, with no maintenance needed.
+
+To add a verse, add another entry anywhere in the list:
+```js
+{
+  reference: "Philippians 4:13",
+  text: "I can do all things through Christ which strengtheneth me.",
+},
+```
+Order doesn't matter, and you can add as many as you like — more verses just
+means a longer cycle before it repeats.
 
 ## Part 4 — Contact page
 

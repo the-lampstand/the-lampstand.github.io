@@ -52,6 +52,12 @@
   </div>
 </header>
 
+<div class="verse-banner">
+  <div class="wrap" id="verse-of-day" aria-live="polite">
+    <!-- filled by script.js -->
+  </div>
+</div>
+
 <main id="main">
   <div class="wrap">
     <section style="padding-top:2.5rem;">
@@ -61,6 +67,24 @@
         A few questions to talk through as a family. Each answer unlocks automatically on the 1st of
         the following month — or tap "Reveal answer" any time after that to see it.
       </p>
+
+      <form class="filters" onsubmit="return false;">
+        <div class="field">
+          <label for="q-filter-month">Month</label>
+          <select id="q-filter-month">
+            <option value="">All months</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="q-filter-theme">Theme</label>
+          <select id="q-filter-theme">
+            <option value="">All themes</option>
+          </select>
+        </div>
+        <button type="button" id="q-filter-clear" class="btn btn-outline">Clear filters</button>
+      </form>
+
+      <p id="q-result-count" class="result-count"></p>
 
       <div id="questions-container"></div>
     </section>

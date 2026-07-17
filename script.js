@@ -5,11 +5,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   initNavToggle();
   initTextSizeControl();
+  initVerseOfDay();
 
   if (document.body.dataset.page === "sermons") initSermonsPage();
   if (document.body.dataset.page === "questions") initQuestionsPage();
   if (document.body.dataset.page === "home") initHomePage();
 });
+
+/* ---------- Verse of the day ---------- */
+function initVerseOfDay() {
+  const el = document.getElementById("verse-of-day");
+  if (!el || typeof VERSES === "undefined" || !VERSES.length) return;
+
+  const today = new Date();
+  const startOfYear = new Date(today.getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((today - startOfYear) / 86400000);
+  const verse = VERSES[dayOfYear % VERSES.length];
+
+  el.innerHTML = `
+    <p class="verse-label">Verse of the day</p>
+    <p class="verse-text">&ldquo;${escapeHtml(verse.text)}&rdquo;</p>
+    <p class="verse-ref">${escapeHtml(verse.reference)}</p>
+  `;
+}
 
 /* ---------- Mobile nav ---------- */
 function initNavToggle() {
@@ -87,6 +105,15 @@ function initHomePage() {
 }
 
 function sermonCardHtml(s) {
+  const preacherHtml = s.preacher
+    ? `<span class="meta-preacher">
+         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+           <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+           <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+         </svg>
+         ${escapeHtml(s.preacher)}
+       </span>`
+    : "";
   return `
     <article class="card sermon-card">
       <div class="meta-row">
@@ -97,6 +124,7 @@ function sermonCardHtml(s) {
           </svg>
           ${formatDate(s.date)}
         </span>
+        ${preacherHtml}
         <span class="theme-tag">${escapeHtml(s.theme)}</span>
       </div>
       <h3><a href="sermons.html#${s.id}">${escapeHtml(s.title)}</a></h3>
@@ -177,13 +205,31 @@ function initSermonsPage() {
       return;
     }
     detailEl.hidden = false;
+    const preacherHtml = sermon.preacher
+      ? `<span class="meta-preacher">
+           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+             <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+             <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+           </svg>
+           ${escapeHtml(sermon.preacher)}
+         </span>`
+      : "";
+    const scripturesHtml =
+      sermon.scriptures && sermon.scriptures.length
+        ? `<div class="scripture-box">
+             <p class="scripture-box-label">Main Scriptures</p>
+             <p>${sermon.scriptures.map(escapeHtml).join(" &middot; ")}</p>
+           </div>`
+        : "";
     detailEl.innerHTML = `
       <a class="back-link" href="sermons.html">&larr; Back to all sermons</a>
       <div class="meta-row">
         <span class="meta-date">${formatDate(sermon.date)}</span>
+        ${preacherHtml}
         <span class="theme-tag">${escapeHtml(sermon.theme)}</span>
       </div>
       <h2>${escapeHtml(sermon.title)}</h2>
+      ${scripturesHtml}
       <div class="body-text">${sermon.content}</div>
     `;
     detailEl.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -193,46 +239,100 @@ function initSermonsPage() {
 /* ---------- Questions page ---------- */
 function initQuestionsPage() {
   const el = document.getElementById("questions-container");
+  const monthSelect = document.getElementById("q-filter-month");
+  const themeSelect = document.getElementById("q-filter-theme");
+  const clearBtn = document.getElementById("q-filter-clear");
+  const countEl = document.getElementById("q-result-count");
   if (!el || typeof QUESTIONS === "undefined") return;
 
   const today = new Date();
+  const sorted = [...QUESTIONS].sort((a, b) => (a.month < b.month ? 1 : -1));
 
-  // Group by month, newest first
-  const byMonth = {};
-  QUESTIONS.forEach((q) => {
-    if (!byMonth[q.month]) byMonth[q.month] = [];
-    byMonth[q.month].push(q);
-  });
-  const months = Object.keys(byMonth).sort().reverse();
-
-  if (!months.length) {
-    el.innerHTML = `<div class="empty-state">No questions posted yet — check back soon.</div>`;
-    return;
+  // Populate month filter (newest first)
+  const months = [...new Set(sorted.map((q) => q.month))];
+  if (monthSelect) {
+    months.forEach((m) => {
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = monthLabel(m);
+      monthSelect.appendChild(opt);
+    });
   }
 
-  el.innerHTML = months
-    .map((m) => {
-      const items = byMonth[m]
-        .map((q) => questionCardHtml(q, isUnlocked(q, today)))
-        .join("");
-      return `
-        <div class="month-group">
-          <h2 class="month-title">${monthLabel(m)}</h2>
-          ${items}
-        </div>
-      `;
-    })
-    .join("");
-
-  // Wire up manual reveal buttons
-  el.querySelectorAll("[data-reveal-id]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const card = btn.closest(".card");
-      const answerBox = card.querySelector(".answer-box");
-      answerBox.hidden = false;
-      btn.hidden = true;
+  // Populate theme filter
+  const themes = [...new Set(sorted.map((q) => q.theme).filter(Boolean))].sort();
+  if (themeSelect) {
+    themes.forEach((t) => {
+      const opt = document.createElement("option");
+      opt.value = t;
+      opt.textContent = t;
+      themeSelect.appendChild(opt);
     });
-  });
+  }
+
+  function render() {
+    const monthVal = monthSelect ? monthSelect.value : "";
+    const themeVal = themeSelect ? themeSelect.value : "";
+
+    const filtered = sorted.filter((q) => {
+      const monthOk = !monthVal || q.month === monthVal;
+      const themeOk = !themeVal || q.theme === themeVal;
+      return monthOk && themeOk;
+    });
+
+    if (countEl) {
+      countEl.textContent = `Showing ${filtered.length} of ${sorted.length} question${sorted.length === 1 ? "" : "s"}`;
+    }
+
+    if (!filtered.length) {
+      el.innerHTML = `<div class="empty-state">No questions match those filters yet.</div>`;
+      return;
+    }
+
+    // Group filtered results by month, newest first
+    const byMonth = {};
+    filtered.forEach((q) => {
+      if (!byMonth[q.month]) byMonth[q.month] = [];
+      byMonth[q.month].push(q);
+    });
+    const groupMonths = Object.keys(byMonth).sort().reverse();
+
+    el.innerHTML = groupMonths
+      .map((m) => {
+        const items = byMonth[m]
+          .map((q) => questionCardHtml(q, isUnlocked(q, today)))
+          .join("");
+        return `
+          <div class="month-group">
+            <h2 class="month-title">${monthLabel(m)}</h2>
+            ${items}
+          </div>
+        `;
+      })
+      .join("");
+
+    // Wire up manual reveal buttons
+    el.querySelectorAll("[data-reveal-id]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const card = btn.closest(".card");
+        const answerBox = card.querySelector(".answer-box");
+        answerBox.hidden = false;
+        btn.hidden = true;
+      });
+    });
+  }
+
+  if (monthSelect) monthSelect.addEventListener("change", render);
+  if (themeSelect) themeSelect.addEventListener("change", render);
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      if (monthSelect) monthSelect.value = "";
+      if (themeSelect) themeSelect.value = "";
+      render();
+    });
+  }
+
+  render();
 }
 
 function isUnlocked(q, today) {
@@ -259,8 +359,13 @@ function questionCardHtml(q, unlocked) {
          Answer reveals ${revealDateLabel(q.month)}
        </span>`;
 
+  const themeHtml = q.theme
+    ? `<div class="meta-row"><span class="theme-tag">${escapeHtml(q.theme)}</span></div>`
+    : "";
+
   return `
     <article class="card question-card">
+      ${themeHtml}
       <p class="q-text">${escapeHtml(q.question)}</p>
       ${controlHtml}
       ${answerHtml}

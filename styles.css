@@ -231,6 +231,38 @@ section { padding: 3rem 0; }
   }
 }
 
+/* ---------- Verse of the day ---------- */
+.verse-banner {
+  border-bottom: 1px solid var(--color-border);
+  background: linear-gradient(180deg, var(--color-bg-elevated), var(--color-bg));
+}
+.verse-banner .wrap {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+.verse-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-green);
+  margin: 0 0 0.35rem;
+}
+.verse-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-text);
+  margin: 0 0 0.3rem;
+  max-width: 42rem;
+}
+.verse-ref {
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   padding: 3.5rem 0 2.5rem;
@@ -357,7 +389,51 @@ section { padding: 3rem 0; }
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
 }
+.meta-preacher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
 .sermon-card p { margin: 0 0 0.9rem; color: var(--color-text-muted); }
+
+.scripture-box {
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-elevated-2);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 0.5rem 0 1.75rem;
+}
+.scripture-box-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-blue);
+  margin: 0 0 0.3rem;
+}
+.scripture-box p:last-child { margin: 0; color: var(--color-text); }
+
+.body-text h4 {
+  font-family: var(--font-display);
+  color: var(--color-green);
+  font-size: 1.2rem;
+  margin: 1.75rem 0 0.85rem;
+}
+.body-text ul,
+.body-text ol {
+  margin: 0 0 1.2rem;
+  padding-left: 1.4rem;
+}
+.body-text li {
+  margin-bottom: 0.6rem;
+}
+.body-text .scripture-note {
+  color: var(--color-blue);
+  font-size: 0.95rem;
+  margin: -0.4rem 0 1.2rem;
+}
 
 /* ---------- Filters ---------- */
 .filters {
