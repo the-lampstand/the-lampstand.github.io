@@ -124,9 +124,109 @@ const SERMONS = [
 
 const QUESTIONS = [
   {
-    id: "q-2026-07-1",
+    id: "q-2026-07-12",
     month: "2026-07",
     theme: "When Jesus Steps In",
+    question:
+      "Which person in the Bible killed a 5 cubits tall (about 7 ½ feet) Egyptian warrior with his own spear?",
+    answer:
+      "Benaiah - 1 Chronicles 11:23  ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-11",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "Which person in the Bible was told to shave their hair and beard, weigh it in three equal parts, and burn a third of the hair inside the city, strike another third of the hair with a sword, and scatter a third to the wind?",
+    answer:
+      "Ezekiel - Ezekiel 5:1-2  ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-10",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "As Jesus hung on the cross the sun stopped shining and there was darkness over the whole land for how long?",
+    answer:
+      "3 hours, from the 6th hour to the ninth hour - Luke 23:44-45  ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-9",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "On the Day of Atonement, Aaron was to take two goats to the entrance of the tent of meeting and cast lots over them, one lot for the Lord and the other lot for __________?",
+    answer:
+      "Azazel - Leviticus 16:7-10 ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-8",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "Which person in the Bible caught 300 foxes, turned the foxes tail-to-tail, and fastened a torch between each pair of tails? ",
+    answer:
+      "Samson - Judges 15:4 ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-7",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "In the Bible, there’s a character who was riding his mule, and as the mule went under the thick branches of a large oak, his hair got caught in the tree. He was left hanging in midair, while the mule he was riding kept on going. Someone saw him hanging and even said 'I just saw him hanging in an oak tree'. Who is this character that was hanging by the hair in an oak tree?",
+    answer:
+      "Absalom - 2 Samuel 18:9-10 ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-6",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "What name did Moses change Hoshea son of Nun to?",
+    answer:
+      "Joshua - Numbers 13:16 ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-5",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "How tall does the Bible say Goliath was?",
+    answer:
+      "About 3 meters tall - 1 Samuel 17:4 ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-4",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "Who’s dead bones brought a man back to life again after the body touched them?",
+    answer:
+      "Elisha - 2 Kings 13:21",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-3",
+    month: "2026-07",
+    theme: "When Jesus Steps In",
+    question:
+      "Which book in the Bible mentions a 'huge man with six fingers on each hand and six toes on each foot'?",
+    answer:
+      "The 2nd book of Samuel - 2 Samuel 21:20 ",
+    revealed: false,
+  },
+  {
+    id: "q-2026-07-1",
+    month: "2026-07",
+    theme: "When Jesus Steps In - Reflection",
     question:
       "Where in your life are you focused on 'the pool' — a system, method, or process — instead of on Jesus Himself? What would it look like to shift your focus to Him?",
     answer:
@@ -136,7 +236,7 @@ const QUESTIONS = [
   {
     id: "q-2026-07-2",
     month: "2026-07",
-    theme: "When Jesus Steps In",
+    theme: "When Jesus Steps In - Reflection",
     question:
       "Of the nine things that attract the Lord to step into our situations — prayer and fasting, obedience, faith, favour, humility, generosity, kingdom service, honouring our parents, and honouring God's servants — which one do you most need to grow in this month?",
     answer:
