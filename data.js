@@ -27,6 +27,25 @@
 
 const SERMONS = [
   {
+    id: "finding-peace-in-troubled-times-2026-08",
+    title: "Finding Peace in Troubled Times",
+    preacher: "Mr. Lyson Besa Jnr.",
+    date: "2026-08-01",
+    theme: "Finding Peace in Troubled Times",
+    scriptures: ["Psalm 23:1-6"],
+    excerpt:
+      "Peace does not come from the absence of trouble, but from the presence of the Shepherd.",
+    content: `
+      <p>Peace means wholeness, harmony, and well-being. It is much more than just being quiet or not fighting.</p>
+      <p>Do we ever wonder why we worry so much that peace leaves us?</p>
+      <p>Trusting God's daily care can sometimes be challenging and mostly finds us worrying about different things that at times even steal our Joy ,forgetting that we have a God who guides, protects, and provides for us even when life is hard and without limitation.</p>
+      <p>In Verse 1-3, King David calls God a shepherd. Sheep are weak and cannot protect themselves. They need a leader to find food and clean water. God does this for us His people, giving rest and fresh strength.
+Verse 4 talks about the valley. Life has scary moments, called "the valley of the shadow of death" but David says he will not fear because God is right there with him. The shepherd uses a rod (to fight enemies) and a staff (to guide sheep) to comfort them. In Verses 5–6, God prepares a meal for His friend right in front of enemies. It shows total safety and honor. God’s goodness and love will follow a believer every single day of his or her life.</p>
+      <p>Let us not let a phase of troubled times steal our peace and lose trust in God. God’s presence is a permanent home and not a temporary shelter.Peace does not come from the absence of trouble, but from the presence of the Shepherd.May we fully trust our God who is a perfect and Good shepherd . 
+May the peace of the Lord always be with us all the days of our lives. Amen</p>
+    `,
+  },
+  {
     id: "when-jesus-steps-in-2026-07",
     title: "When Jesus Steps In",
     preacher: "Dr. Gladys",
@@ -124,11 +143,131 @@ const SERMONS = [
 
 const QUESTIONS = [
   {
+    id: "q-2026-08-12",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q10: In the wilderness journey, what unusual food did God send to the Israelites at twilight, and what did He provide in the morning?",
+    answer:
+      "At twilight, God sent quail to cover the camp, and in the morning He provided manna, described as “a small round thing” like frost on the ground — Exodus 16:12-15.",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-11",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q9: Who was the woman that killed Sisera by driving a tent peg through his head?",
+    answer:
+      "Jael — Judges 4:21",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-10",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q8: Who was the Roman governor that trembled when Paul reasoned with him about righteousness, temperance, and judgment?",
+    answer:
+      "Felix — Acts 24:25",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-9",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q7: Which prophet was commanded to eat a scroll, and it tasted sweet like honey?",
+    answer:
+      "Ezekiel — Ezekiel 3:1-3",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-8",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q6: Who fell asleep during Paul’s long preaching, fell from a window, and was raised back to life?",
+    answer:
+      "Eutychus — Acts 20:9-10",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-7",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q5: Which king of Israel made two golden calves and told the people, 'Behold thy gods, O Israel'?",
+    answer:
+      "Jeroboam — 1 Kings 12:28",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-6",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q4: Who was struck dead for touching the Ark of the Covenant when the oxen stumbled?",
+    answer:
+      "Uzzah — 2 Samuel 6:6-7",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-5",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q3: Which disciple was first to recognize Jesus after the miraculous catch of fish following His resurrection?",
+    answer:
+      "John — John 21:7",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-4",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q2: Which king of Judah was afflicted with leprosy after unlawfully burning incense in the temple?",
+    answer:
+      "Uzziah — 2 Chronicles 26:16-21",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-3",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "Q1: Which prophet saw a vision of a flying scroll representing judgment?",
+    answer:
+      "Zechariah — Zechariah 5:1-4",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-2",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "RQ2: In what areas of your life do you feel weary or overwhelmed, and how can you actively 'wait upon the Lord' in those situations?",
+    answer:
+      "Think about specific areas — maybe work stress, family responsibilities, or personal goals. Instead of pushing through in your own strength, practice waiting by pausing for prayer, journaling your concerns, or setting aside quiet time to listen for God’s guidance. This shifts the focus from self-reliance to God’s sustaining power.",
+    revealed: false,
+  },
+  {
+    id: "q-2026-08-1",
+    month: "2026-08",
+    theme: "Finding Peace in Troubled times",
+    question:
+      "RQ1: How can you demonstrate renewed strength and hope to others around you?",
+    answer:
+      "Renewal isn’t just for personal encouragement; it’s also a witness. You can show renewed strength by responding with patience when others are frustrated, offering encouragement when someone feels discouraged, or serving faithfully even when life feels heavy. Your resilience rooted in God can inspire others to trust Him too.",
+    revealed: false,
+  },
+  {
     id: "q-2026-07-12",
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "Which person in the Bible killed a 5 cubits tall (about 7 ½ feet) Egyptian warrior with his own spear?",
+      "Q10: Which person in the Bible killed a 5 cubits tall (about 7 ½ feet) Egyptian warrior with his own spear?",
     answer:
       "Benaiah - 1 Chronicles 11:23  ",
     revealed: false,
@@ -138,7 +277,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "Which person in the Bible was told to shave their hair and beard, weigh it in three equal parts, and burn a third of the hair inside the city, strike another third of the hair with a sword, and scatter a third to the wind?",
+      "Q9: Which person in the Bible was told to shave their hair and beard, weigh it in three equal parts, and burn a third of the hair inside the city, strike another third of the hair with a sword, and scatter a third to the wind?",
     answer:
       "Ezekiel - Ezekiel 5:1-2  ",
     revealed: false,
@@ -148,7 +287,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "As Jesus hung on the cross the sun stopped shining and there was darkness over the whole land for how long?",
+      "Q8: As Jesus hung on the cross the sun stopped shining and there was darkness over the whole land for how long?",
     answer:
       "3 hours, from the 6th hour to the ninth hour - Luke 23:44-45  ",
     revealed: false,
@@ -158,7 +297,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "On the Day of Atonement, Aaron was to take two goats to the entrance of the tent of meeting and cast lots over them, one lot for the Lord and the other lot for __________?",
+      "Q7: On the Day of Atonement, Aaron was to take two goats to the entrance of the tent of meeting and cast lots over them, one lot for the Lord and the other lot for __________?",
     answer:
       "Azazel - Leviticus 16:7-10 ",
     revealed: false,
@@ -168,7 +307,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "Which person in the Bible caught 300 foxes, turned the foxes tail-to-tail, and fastened a torch between each pair of tails? ",
+      "Q6: Which person in the Bible caught 300 foxes, turned the foxes tail-to-tail, and fastened a torch between each pair of tails? ",
     answer:
       "Samson - Judges 15:4 ",
     revealed: false,
@@ -178,7 +317,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "In the Bible, there’s a character who was riding his mule, and as the mule went under the thick branches of a large oak, his hair got caught in the tree. He was left hanging in midair, while the mule he was riding kept on going. Someone saw him hanging and even said 'I just saw him hanging in an oak tree'. Who is this character that was hanging by the hair in an oak tree?",
+      "Q5: In the Bible, there’s a character who was riding his mule, and as the mule went under the thick branches of a large oak, his hair got caught in the tree. He was left hanging in midair, while the mule he was riding kept on going. Someone saw him hanging and even said 'I just saw him hanging in an oak tree'. Who is this character that was hanging by the hair in an oak tree?",
     answer:
       "Absalom - 2 Samuel 18:9-10 ",
     revealed: false,
@@ -188,7 +327,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "What name did Moses change Hoshea son of Nun to?",
+      "Q4: What name did Moses change Hoshea son of Nun to?",
     answer:
       "Joshua - Numbers 13:16 ",
     revealed: false,
@@ -198,7 +337,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "How tall does the Bible say Goliath was?",
+      "Q3: How tall does the Bible say Goliath was?",
     answer:
       "About 3 meters tall - 1 Samuel 17:4 ",
     revealed: false,
@@ -208,7 +347,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "Who’s dead bones brought a man back to life again after the body touched them?",
+      "Q2: Who’s dead bones brought a man back to life again after the body touched them?",
     answer:
       "Elisha - 2 Kings 13:21",
     revealed: false,
@@ -218,7 +357,7 @@ const QUESTIONS = [
     month: "2026-07",
     theme: "When Jesus Steps In",
     question:
-      "Which book in the Bible mentions a 'huge man with six fingers on each hand and six toes on each foot'?",
+      "Q1: Which book in the Bible mentions a 'huge man with six fingers on each hand and six toes on each foot'?",
     answer:
       "The 2nd book of Samuel - 2 Samuel 21:20 ",
     revealed: false,
@@ -226,9 +365,9 @@ const QUESTIONS = [
   {
     id: "q-2026-07-1",
     month: "2026-07",
-    theme: "When Jesus Steps In - Reflection",
+    theme: "When Jesus Steps In",
     question:
-      "Where in your life are you focused on 'the pool' — a system, method, or process — instead of on Jesus Himself? What would it look like to shift your focus to Him?",
+      "RQ2: Where in your life are you focused on 'the pool' — a system, method, or process — instead of on Jesus Himself? What would it look like to shift your focus to Him?",
     answer:
       "There's no single right answer here — the aim is honest reflection. Many of us named a habit, a process, or a person we'd been leaning on instead of prayer, and talked about what it would look like to bring that situation to Jesus directly this month.",
     revealed: false,
@@ -236,9 +375,9 @@ const QUESTIONS = [
   {
     id: "q-2026-07-2",
     month: "2026-07",
-    theme: "When Jesus Steps In - Reflection",
+    theme: "When Jesus Steps In",
     question:
-      "Of the nine things that attract the Lord to step into our situations — prayer and fasting, obedience, faith, favour, humility, generosity, kingdom service, honouring our parents, and honouring God's servants — which one do you most need to grow in this month?",
+      "RQ1: Of the nine things that attract the Lord to step into our situations — prayer and fasting, obedience, faith, favour, humility, generosity, kingdom service, honouring our parents, and honouring God's servants — which one do you most need to grow in this month?",
     answer:
       "Answers varied across the family, but obedience and prayer and fasting came up most. A few of us committed to one practical step this month rather than trying to grow in all nine areas at once.",
     revealed: false,
@@ -248,7 +387,7 @@ const QUESTIONS = [
     month: "2026-05",
     theme: "The Importance of Fellowship",
     question:
-      "Fellowship was described as a source of unity, growth, and accountability. Which of these three do you personally need most right now?",
+      "RQ2: Fellowship was described as a source of unity, growth, and accountability. Which of these three do you personally need most right now?",
     answer:
       "Several of us said accountability — having someone who checks in and keeps us grounded. Others said growth, especially those going through a season of change. A reminder that fellowship meets different needs at different times.",
     revealed: true,
@@ -258,7 +397,7 @@ const QUESTIONS = [
     month: "2026-05",
     theme: "The Importance of Fellowship",
     question:
-      "Is there a relationship or fellowship you've been neglecting? What's one small step you could take to reconnect?",
+      "RQ1: Is there a relationship or fellowship you've been neglecting? What's one small step you could take to reconnect?",
     answer:
       "A few of us named family members or friends we'd fallen out of touch with, and agreed to reach out with a call or visit before the next gathering.",
     revealed: true,
@@ -268,7 +407,7 @@ const QUESTIONS = [
     month: "2026-03",
     theme: "Giving Thanks to God",
     question:
-      "The sermon gave several reasons to give thanks: He is good, He has done great things for us, it is an instruction, it makes us humble, and it positions us to receive more. Which of these means the most to you this month?",
+      "RQ2: The sermon gave several reasons to give thanks: He is good, He has done great things for us, it is an instruction, it makes us humble, and it positions us to receive more. Which of these means the most to you this month?",
     answer:
       "Many of us pointed to 'He has done great things for us' — it was encouraging to actually list specific things God had done recently rather than speaking in generalities.",
     revealed: true,
@@ -278,7 +417,7 @@ const QUESTIONS = [
     month: "2026-03",
     theme: "Giving Thanks to God",
     question:
-      "Think of a time in the past year when you experienced God's goodness, the way Miriam, Hannah, or the healed leper did. Have you thanked Him for it yet?",
+      "RQ1: Think of a time in the past year when you experienced God's goodness, the way Miriam, Hannah, or the healed leper did. Have you thanked Him for it yet?",
     answer:
       "This question led to several family members sharing specific answered prayers out loud for the first time, and closing that gathering in a time of thanksgiving together.",
     revealed: true,
@@ -300,6 +439,86 @@ const QUESTIONS = [
    ========================================================= */
 
 const VERSES = [
+  {
+    reference: "Isaiah 40:31",
+    text: "But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+  },
+  {
+    reference: "Matthew 7:7",
+    text: "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.",
+  },
+  {
+    reference: "2 Timothy 1:7",
+    text: "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+  },
+  {
+    reference: "Psalm 37:4",
+    text: "Delight thyself also in the Lord: and he shall give thee the desires of thine heart.",
+  },
+  {
+    reference: "John 8:12",
+    text: "Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.",
+  },
+  {
+    reference: "1 Thessalonians 5:16-18",
+    text: "Rejoice evermore. Pray without ceasing. In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
+  },
+  {
+    reference: "Exodus 14:14",
+    text: "The Lord shall fight for you, and ye shall hold your peace.",
+  },
+  {
+    reference: "Matthew 28:20",
+    text: "Lo, I am with you alway, even unto the end of the world. Amen.",
+  },
+  {
+    reference: "Psalm 55:22",
+    text: "Cast thy burden upon the Lord, and he shall sustain thee: he shall never suffer the righteous to be moved.",
+  },
+  {
+    reference: "Romans 10:9",
+    text: "That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved.",
+  },
+  {
+    reference: "Ephesians 2:8-9",
+    text: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: not of works, lest any man should boast.",
+  },
+  {
+    reference: "Micah 6:8",
+    text: "He hath shewed thee, O man, what is good; and what doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+  },
+  {
+    reference: "Colossians 3:23",
+    text: "And whatsoever ye do, do it heartily, as to the Lord, and not unto men.",
+  },
+  {
+    reference: "Psalm 27:1",
+    text: "The Lord is my light and my salvation; whom shall I fear? the Lord is the strength of my life; of whom shall I be afraid?",
+  },
+  {
+    reference: "Matthew 5:16",
+    text: "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+  },
+  {
+    reference: "Romans 5:8",
+    text: "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.",
+  },
+  {
+    reference: "Psalm 51:10",
+    text: "Create in me a clean heart, O God; and renew a right spirit within me.",
+  },
+  {
+    reference: "James 1:5",
+    text: "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.",
+  },
+  {
+    reference: "1 John 4:7",
+    text: "Beloved, let us love one another: for love is of God; and every one that loveth is born of God, and knoweth God.",
+  },
+  {
+    reference: "Psalm 100:4",
+    text: "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name.",
+  },
   {
     reference: "Psalm 119:105",
     text: "Thy word is a lamp unto my feet, and a light unto my path.",
@@ -333,11 +552,84 @@ const VERSES = [
     text: "It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
   },
   {
-    reference: "Joshua 1:9",
-    text: "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.",
+    reference: "Psalm 119:105",
+    text: "Thy word is a lamp unto my feet, and a light unto my path.",
   },
+  {
+    reference: "Matthew 6:33",
+    text: "But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.",
+  },
+  {
+    reference: "Joshua 1:9",
+    text: "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the Lord thy God is with thee whithersoever thou goest.",
+  },
+  {
+    reference: "Romans 12:2",
+    text: "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God.",
+  },
+  {
+    reference: "Psalm 34:8",
+    text: "O taste and see that the Lord is good: blessed is the man that trusteth in him.",
+  },
+  {
+    reference: "Hebrews 11:1",
+    text: "Now faith is the substance of things hoped for, the evidence of things not seen.",
+  },
+  {
+    reference: "1 Peter 5:7",
+    text: "Casting all your care upon him; for he careth for you.",
+  },
+  {
+    reference: "John 14:6",
+    text: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.",
+  },
+  {
+    reference: "Galatians 5:22-23",
+    text: "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance: against such there is no law.",
+  },
+  {
+    reference: "Psalm 91:1",
+    text: "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty.",
+  },
+
   {
     reference: "Romans 8:28",
     text: "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+  },
+  {
+    reference: "Jeremiah 29:11",
+    text: "For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil, to give you an expected end.",
+  },
+  {
+    reference: "Philippians 4:13",
+    text: "I can do all things through Christ which strengtheneth me.",
+  },
+  {
+    reference: "Psalm 23:1",
+    text: "The Lord is my shepherd; I shall not want.",
+  },
+  {
+    reference: "Isaiah 41:10",
+    text: "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
+  },
+  {
+    reference: "John 3:16",
+    text: "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+  },
+  {
+    reference: "Proverbs 3:5-6",
+    text: "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+  },
+  {
+    reference: "Matthew 11:28",
+    text: "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+  },
+  {
+    reference: "2 Corinthians 5:7",
+    text: "For we walk by faith, not by sight.",
+  },
+  {
+    reference: "Psalm 46:1",
+    text: "God is our refuge and strength, a very present help in trouble.",
   },
 ];
