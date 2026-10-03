@@ -200,7 +200,7 @@ May the peace of the Lord always be with us all the days of our lives. Amen</p>
 const QUESTIONS = [
   {
     id: "q-2026-10-12",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q10: Which king of Israel was killed by an arrow that struck him between the joints of his armor?",
@@ -210,7 +210,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-11",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q9: Who was the prophet that saw a vision of locusts devouring the land, and God relented after his prayer?",
@@ -220,7 +220,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-10",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q8: Which apostle healed a lame man at the Beautiful Gate of the temple?",
@@ -230,7 +230,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-9",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q7: Who was the prophet that saw a vision of a lampstand and two olive trees?",
@@ -240,7 +240,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-8",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q6: Which woman hid two Israelite spies on her roof under stalks of flax?",
@@ -250,7 +250,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-7",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q5: Who was the prophet that saw a vision of a basket of summer fruit, symbolizing the end for Israel?",
@@ -260,7 +260,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-6",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q4: Which disciple(s) was sent to Samaria to preach after Philip baptized the Ethiopian eunuch?",
@@ -270,7 +270,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-5",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q3: Who was the prophet that lay on his side for 390 days as a sign against Israel?",
@@ -280,7 +280,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-4",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q2: Who was the prophet that saw a vision of a man with a measuring line in his hand?",
@@ -290,7 +290,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-3",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "Q1: Which king of Judah found the Book of the Law during temple repairs and tore his clothes in repentance?",
@@ -300,7 +300,7 @@ const QUESTIONS = [
   },
     {
     id: "q-2026-10-2",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "RQ2: How can my personal expression of praise and gratitude become a source of encouragement and hope for someone else in our community?",
@@ -310,7 +310,7 @@ const QUESTIONS = [
   },
   {
     id: "q-2026-10-1",
-    month: "2026-08",
+    month: "2026-10",
     theme: "Be Anchored in Praise",
     question:
       "RQ1: In what areas of my life am I allowing current struggles to dictate my joy, rather than fixing my eyes on Jesus—my unshakable hope?",
