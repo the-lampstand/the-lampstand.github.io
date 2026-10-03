@@ -27,6 +27,62 @@
 
 const SERMONS = [
   {
+    id: "be-anchored-in-praise-2026-10",
+    title: "Be Anchored in Praise",
+    preacher: "Kasonde Besa.",
+    date: "2026-10-03",
+    theme: "Be Anchored in Praise",
+    scriptures: ["Psalm 23:1-6"],
+    excerpt:
+      "Peace does not come from the absence of trouble, but from the presence of the Shepherd.",
+    content: `
+      <p>Colosians 3:16 - "Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God."</p>
+
+      <p>Kindly ​meditate on these things as we pray and fast tomorrow:</p>
+
+      <h4>​THE ESSENCE OF PRAISE</h4>
+
+      <p>Praise signifies an expression of gratitude, reverence, and spiritual alignment with God’s truth.</p>
+
+      <p><br>Hebrews 13:15
+      "Through Jesus, therefore, let us continually offer to God a sacrifice of praise—the fruit of lips that openly profess his name."<p>
+
+
+      ​<h4>THE SOURCE OF OUR HOPE</h4>
+      <p>Jesus Christ is the sole foundation of our salvation, granting eternal life, redemption, and enduring peace to those who believe in Him. Christ is our unshakable and sufficient hope.</p>
+
+      ​<p><br>Acts 4:12
+      "And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved."</p>
+
+
+      <h4>​PRAISE TRANSFORMS OUR PERSPECTIVE</h4>
+      <p>Praise shifts our focus away from our earthly trials and fixes our eyes on God’s sovereignty, even in the hard seasons of life, like Paul and Silas in prison.</p>
+
+      <p><br>​Acts 16:25
+      "About midnight Paul and Silas were praying and singing hymns to God, and the prisoners were listening to them."</p>
+
+
+      <h4>​COMMUNAL WORSHIP STRENGTHENS THE BODY OF CHRIST</h4>
+      <p>Our shared praise is a live testimony—it breathes faith and encouragement into those around us as we gather and worship God together.</p>
+
+      <p><br>​Hebrews 10:24-25
+      "Let us think of ways to motivate one another to acts of love and good works. And let us not neglect our meeting together… but encourage one another."</p>
+
+
+      <h4>​OUR APPROPRIATE RESPONSE TO GOD'S REDEMPTIVE GIFT</h4>
+      <p>In light of all He has done, our heart’s natural posture should be to bless His holy name and remember His faithfulness.</p>
+
+      <p><br>​Psalm 103:1-2 
+      "Bless the LORD, O my soul: and all that is within me, bless his holy name.
+      Bless the LORD, O my soul, and forget not all his benefits."</p>
+
+      <p><br>When you have the chance to do so, listen to 10,000 Reasons by Matt Redman.</p>
+
+      <p><br>Prayer requests are welcome.</p>
+      <p>God bless us all.</p>
+    `,
+  },
+  {
     id: "finding-peace-in-troubled-times-2026-08",
     title: "Finding Peace in Troubled Times",
     preacher: "Mr. Lyson Besa Jnr.",
@@ -142,6 +198,126 @@ May the peace of the Lord always be with us all the days of our lives. Amen</p>
 ];
 
 const QUESTIONS = [
+  {
+    id: "q-2026-10-12",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q10: Which king of Israel was killed by an arrow that struck him between the joints of his armor?",
+    answer:
+      "Ahab — 1 Kings 22:34-35",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-11",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q9: Who was the prophet that saw a vision of locusts devouring the land, and God relented after his prayer?",
+    answer:
+      "Amos — Amos 7:1-3",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-10",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q8: Which apostle healed a lame man at the Beautiful Gate of the temple?",
+    answer:
+      "Peter — Acts 3:6-7",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-9",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q7: Who was the prophet that saw a vision of a lampstand and two olive trees?",
+    answer:
+      "Zechariah — Zechariah 4:2-3",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-8",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q6: Which woman hid two Israelite spies on her roof under stalks of flax?",
+    answer:
+      "Rahab — Joshua 2:1-6",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-7",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q5: Who was the prophet that saw a vision of a basket of summer fruit, symbolizing the end for Israel?",
+    answer:
+      "Amos — Amos 8:1-2",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-6",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q4: Which disciple(s) was sent to Samaria to preach after Philip baptized the Ethiopian eunuch?",
+    answer:
+      "Peter and John — Acts 8:14-17",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-5",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q3: Who was the prophet that lay on his side for 390 days as a sign against Israel?",
+    answer:
+      "Ezekiel — Ezekiel 4:4-5",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-4",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q2: Who was the prophet that saw a vision of a man with a measuring line in his hand?",
+    answer:
+      "Zechariah — Zechariah 2:1-2",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-3",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "Q1: Which king of Judah found the Book of the Law during temple repairs and tore his clothes in repentance?",
+    answer:
+      "Josiah — 2 Kings 22:8-11",
+    revealed: false,
+  },
+    {
+    id: "q-2026-10-2",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "RQ2: How can my personal expression of praise and gratitude become a source of encouragement and hope for someone else in our community?",
+    answer:
+      "Think about the people around you in church, family, or your workplace. Answering this means choosing a practical way your attitude, testimony, or vocal praise can strengthen someone else who might be struggling.",
+    revealed: false,
+  },
+  {
+    id: "q-2026-10-1",
+    month: "2026-08",
+    theme: "Be Anchored in Praise",
+    question:
+      "RQ1: In what areas of my life am I allowing current struggles to dictate my joy, rather than fixing my eyes on Jesus—my unshakable hope?",
+    answer:
+      "Look at where your stress or anxiety has been concentrated. Answering this requires identifying a specific situation where feelings have overridden the security found in salvation, and then intentionally shifting that focus back to Christ.",
+    revealed: false,
+  },
   {
     id: "q-2026-08-12",
     month: "2026-08",
